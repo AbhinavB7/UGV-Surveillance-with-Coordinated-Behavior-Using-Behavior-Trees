@@ -1,0 +1,27 @@
+<root main_tree_to_execute="MainTree">
+  <BehaviorTree ID="MainTree">
+    <!-- Sequence to check for person and navigate to predefined locations -->
+    <Sequence name="check_navigation_sequence">
+
+      <!-- Parallel node: Will succeed if either person is detected or navigation completes -->
+      <Parallel name="parallel_check_navigation" success_threshold="1" failure_threshold="2">
+        
+        <!-- Node to check for the presence of a person -->
+        <CheckForPerson name="check_for_person" />
+        
+        <!-- Sequence for navigating to predefined locations -->
+        <Sequence name="navigate_sequence">
+          <GoToPose name="go_to_location1" loc="location1" />
+          <GoToPose name="go_to_location2" loc="location2" />
+          <GoToPose name="go_to_location3" loc="location3" />
+          <GoToPose name="go_to_location4" loc="location4" />
+        </Sequence>
+        
+      </Parallel>
+
+      <!-- Node to navigate to the detected person if a person is detected -->
+      <GoToPose name="navigate_to_person" loc="location7" />
+
+    </Sequence>
+  </BehaviorTree>
+</root>
