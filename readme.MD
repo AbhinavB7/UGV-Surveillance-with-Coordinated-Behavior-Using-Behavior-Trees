@@ -1,15 +1,15 @@
-### UGV-Surveillance-with-Coordinated-Behavior-Using-Behavior-Trees
+## UGV-Surveillance-with-Coordinated-Behavior-Using-Behavior-Trees
 
 A multi‑robot Unmanned Ground Vehicle (UGV) system using behavior trees for coordinated surveillance, obstacle avoidance, and target(human) detection.
 
-# Red Cube detection using OpenCV and Human Detection using YOLOv5
+### Red Cube detection using OpenCV and Human Detection using YOLOv5
 <img src="assets/cube and human detection.png" alt="cube_and_human_detection" width="700"/>
 
-# Obstacle Detection and Update
+### Obstacle Detection and Update
 <img src="assets/obstacle_detection.png" alt="obstacle_detection" width="700">
 Once a red cube is detected, it updates as an obstacle for every robot in their costmap as a pink circle.
 
-# Navigation Towards the human
+### Navigation Towards the human
 <img src="assets/navigate_towards_person.png" alt="human_detection" width="700"/>
 If any person is detected, the robots communicate and all the robots navigate towards the person.
 
@@ -61,7 +61,6 @@ Working Video: [Videos](https://drive.google.com/drive/folders/137Py9VkAu7WxhED8
 ## Behavior Tree Overview
 
 The behavior tree is defined as following:
-
 	- Parallel Node runs two tasks simultaneously
 		1. 'CheckForPerson' detects if a person is present 
 		2. 'navigate_sequence': navigates sequentially to predefined locations in the .yaml file.
