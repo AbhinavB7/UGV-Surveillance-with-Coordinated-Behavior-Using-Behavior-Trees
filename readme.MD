@@ -1,19 +1,27 @@
-Inception - Project 0
-Abhinav Bhamidipati 
-
+### UGV-Surveillance-with-Coordinated-Behavior-Using-Behavior-Trees
 
 Steps to run the package
 
-1. colcon build
-2. source install/setup.bash
+1. `colcon build`
+2. `source install/setup.bash`
 
-3. ros2 launch inception_p0 gazebo_multi_nav2.launch.py  - #launches the world with robots and also launches NAV2 
+3. Initial launch	
+	```
+	ros2 launch inception_p0 gazebo_multi_nav2.launch.py
+	```  
+	launches the world with robots and also launches NAV2 
 
 4. Open a new terminal 
-    ros2 launch inception_p0 global.launch.py - #launches the red cube detection, yolo human detection and updates the detected red cubes as obstacles for all robots
+    ```
+	ros2 launch inception_p0 global.launch.py
+	``` 
+	launches the red cube detection, yolo human detection and updates the detected red cubes as obstacles for all robots
 
 5. New terminal
-    ros2 launch inception_p0 autonomy.launch.py - #launch the behavior tree
+    ```
+	ros2 launch inception_p0 autonomy.launch.py
+	``` 
+	launch the behavior tree
     
     
 
