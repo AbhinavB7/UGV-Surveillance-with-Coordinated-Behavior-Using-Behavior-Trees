@@ -1,0 +1,10 @@
+# locations as [x, y, theta]
+location_tb1_1: [6.2, 0.8, -2.356]
+location_tb1_2: [2.8, -3.2, 1.571]
+location_tb1_3: [6.2, 0.8, -2.356]
+location_tb1_4: [-3.5, 5, -1.571]
+
+location_tb2_1: [-1.1, -1.2, 1.571]
+location_tb2_2: [-3.5, 5, -1.571]
+location_tb2_3: [2.8, -3.2, 0.785]
+location_tb2_4: [6.2, 0.8, -2.356] 
